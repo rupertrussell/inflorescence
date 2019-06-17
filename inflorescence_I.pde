@@ -9,8 +9,6 @@ PFont f;
 void setup() 
 {
   size(350, 350);
-  // f = loadFont("Serif-18.vlw");
-  //  f = loadFont("SansSerif-18.vlw"); 
   smooth();
   img = loadImage("seed.png"); // Load the image
   frameRate(10);
@@ -30,7 +28,6 @@ void setup()
 void draw() 
 {
   background(0);
-  // textFont(f,18);
   for (int i = 0; i < seeds.size(); i++)
   {
     s = (Seed)seeds.get(i);
@@ -47,10 +44,9 @@ void draw()
   }
   counter++;
   stroke(255);
-  // text("When seedhead has formed click to restart.",15,40);
 }
 
-// regrow the seed head
+// save image
 void mouseClicked() 
 {
   savecounter = savecounter + 1;
